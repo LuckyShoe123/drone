@@ -9,6 +9,7 @@ Cylon.robot()
         port: '192.168.1.1'
     })
 
+
     .device("drone", {
         driver: "ardrone",
         connection: "ardrone"
@@ -20,7 +21,8 @@ Cylon.robot()
     })
 
     .on("ready", fly);
-    
+
+
 // Fly the bot
 function fly(robot) {
     bot=robot;
