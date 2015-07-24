@@ -49,51 +49,55 @@ function fly(robot) {
 
     bot.drone.takeoff();
 
+    after (2*1000, function(){
+        bot.drone.hover()
+    });
+
+    after (6*1000, function(){
+        bot.drone.left(0.1)
+    });
+
     after (8*1000, function(){
-        bot.drone.left(0.2)
-    });
-
-    after (10*1000, function(){
         bot.drone.hover()
     });
 
-    after (23*1000, function(){
-        bot.drone.front(0.2)
+    after (12*1000, function(){
+        bot.drone.front(0.1)
     });
 
-    after (25*1000, function(){
+    after (14*1000, function(){
         bot.drone.hover()
     });
 
-    after (35*1000, function(){
-        bot.drone.right(0.2)
+    after (18*1000, function(){
+        bot.drone.right(0.1)
     });
 
-    after (37*1000, function(){
+    after (20*1000, function(){
         bot.drone.hover()
     });
 
-    after (50*1000, function(){
-        bot.drone.back(0.2)
+    after (24*1000, function(){
+        bot.drone.back(0.1)
     });
 
-    after (52*1000, function(){
+    after (26*1000, function(){
         bot.drone.hover()
     });
 
-    after (56*1000, function(){
-        bot.drone.left(0.2)
+    after (30*1000, function(){
+        bot.drone.left(0.1)
     });
 
-    after (58*1000, function(){
+    after (32*1000, function(){
         bot.drone.hover()
     });
 
-    after(60*1000, function(){
+    after(36*1000, function(){
         bot.drone.land();
     });
 
-    after(65*1000, function(){
+    after(38*1000, function(){
         bot.drone.stop();
     });
 
